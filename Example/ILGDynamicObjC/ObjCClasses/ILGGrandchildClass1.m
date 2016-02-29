@@ -12,7 +12,7 @@
 
 - (void)doALittleDance
 {
-    NSLog(@"Doing The Whip And Or The Nae Nae");
+    NSLog(@"Doing The Whip And/Or The Nae Nae");
 }
 
 @end
