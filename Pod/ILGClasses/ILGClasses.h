@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef BOOL(^ILGClassesClassTestBlock)(__strong Class class);
 
 @interface ILGClasses : NSObject
@@ -19,7 +21,7 @@ typedef BOOL(^ILGClassesClassTestBlock)(__strong Class class);
  *
  *  @return A set of all of the classes passing the test
  */
-+ (NSSet *)classesPassingTest:(ILGClassesClassTestBlock)test;
++ (NSSet<Class> *__nullable)classesPassingTest:(ILGClassesClassTestBlock)test;
 
 /**
  *  Get a set of all of the classes that are a subclass of the given class.
@@ -31,7 +33,7 @@ typedef BOOL(^ILGClassesClassTestBlock)(__strong Class class);
  *
  *  @return A set of all of the subclasses of the given class, including indirect subclasses.
  */
-+ (NSSet *)subclassesOfClass:(Class)superclass;
++ (NSSet<Class> *__nullable)subclassesOfClass:(Class)superclass;
 
 /**
  *  Get a set of all of the classes that conform to the given protocol.
@@ -40,6 +42,8 @@ typedef BOOL(^ILGClassesClassTestBlock)(__strong Class class);
  *
  *  @return A set of all of the classes that conform to the given protocol, as well as their direct and indirect subclasses.
  */
-+ (NSSet *)classesConformingToProtocol:(Protocol *)protocol;
++ (NSSet<Class> *__nullable)classesConformingToProtocol:(Protocol *)protocol;
+
+NS_ASSUME_NONNULL_END
 
 @end
