@@ -19,6 +19,12 @@
 #import "ILGChildClass3.h"
 #import "ILGGrandchildClass1.h"
 
+@interface ILGClasses()
+// "Public" for testing only
++ (BOOL)class:(Class)classToCheck orAnyOfItsSuperclassesPassesTest:(ILGClassesClassTestBlock)test;
+
+@end
+
 @interface ILGClasses_Tests_ObjC : XCTestCase
 
 @end
@@ -35,8 +41,17 @@
                                                    ]];
     
     NSSet *retrievedClasses = [ILGClasses classesPassingTest:^BOOL(Class class) {
-        NSString *className = NSStringFromClass(class);
-        return [className containsString:@"Class1"];
+        if ([ILGClasses class:class orAnyOfItsSuperclassesPassesTest:^BOOL(Class  _Nonnull class) {
+            return class == [NSObject class];
+        }]) {
+            //This is something that eventually inherits from NSObject.
+            NSString *className = NSStringFromClass(class);
+            return [className containsString:@"Class1"];
+        }
+        
+        // This is something in Swift with no superclass, which can't be imported
+        // into Obj-C for testing.
+        return NO; 
     }];
     
     XCTAssertEqualObjects(expectedClasses, retrievedClasses);
