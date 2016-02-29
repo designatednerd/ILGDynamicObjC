@@ -27,7 +27,7 @@ These notes were last updated for Swift 2.1. Your mileage may vary on newer vers
 
 For `ILGClasses`: 
 
-- If you're using a mix of Obj-C and Swift, you will get classes passing your test in both languages - even if one of those classes can't be called from Obj-C. You can see a workaround for this in the (Obj-C Tests]()
+- If you're using a mix of Obj-C and Swift, you will get classes passing your test in both languages - even if one of those classes can't be called from Obj-C. You can see a workaround for this in the [Obj-C Tests](Example/Tests/ILGClasses_Tests_ObjC.m).
 - You can only check protocol conformance for either protocols declared in Objective-C or declared in Swift and annotated with `@objc`. These may be passed in like so:  
 ```swift
 ILGClasses.classesConformingToProtocol(SwiftProtocolMarkedWithObjC.self)
