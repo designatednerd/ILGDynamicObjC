@@ -23,12 +23,18 @@
 		717559BACB9F3E1722B6ECB7 /* libPods-ILGDynamicObjC_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 257B12B76CAF9DABA1E6B4D2 /* libPods-ILGDynamicObjC_Example.a */; };
 		71D1C62C1B38CB0800BC6681 /* ILGSwizzler_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D1C62B1B38CB0800BC6681 /* ILGSwizzler_Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9B038A141C84ED5100C21541 /* ILGChildClass1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B038A021C84ED5100C21541 /* ILGChildClass1.m */; };
+		9B038A151C84ED5100C21541 /* ILGChildClass2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B038A041C84ED5100C21541 /* ILGChildClass2.m */; };
+		9B038A161C84ED5100C21541 /* ILGChildClass3.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B038A061C84ED5100C21541 /* ILGChildClass3.m */; };
+		9B038A171C84ED5100C21541 /* ILGGrandchildClass1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B038A081C84ED5100C21541 /* ILGGrandchildClass1.m */; };
+		9B038A181C84ED5100C21541 /* ILGParentClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B038A0A1C84ED5100C21541 /* ILGParentClass.m */; };
+		9B038A191C84ED5100C21541 /* SwiftChildClass1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B038A0E1C84ED5100C21541 /* SwiftChildClass1.swift */; };
+		9B038A1A1C84ED5100C21541 /* SwiftChildClass2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B038A0F1C84ED5100C21541 /* SwiftChildClass2.swift */; };
+		9B038A1B1C84ED5100C21541 /* SwiftChildClass3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B038A101C84ED5100C21541 /* SwiftChildClass3.swift */; };
+		9B038A1C1C84ED5100C21541 /* SwiftGrandchildClass1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B038A111C84ED5100C21541 /* SwiftGrandchildClass1.swift */; };
+		9B038A1D1C84ED5100C21541 /* SwiftParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B038A121C84ED5100C21541 /* SwiftParentClass.swift */; };
+		9B038A1E1C84ED5100C21541 /* SwiftProtocolMarkedWithObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B038A131C84ED5100C21541 /* SwiftProtocolMarkedWithObjC.swift */; };
 		9BB707001C7FAFD9002BD5E5 /* ILGClasses_Tests_ObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB706FF1C7FAFD9002BD5E5 /* ILGClasses_Tests_ObjC.m */; };
-		9BB707031C7FB10E002BD5E5 /* ILGParentClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB707021C7FB10E002BD5E5 /* ILGParentClass.m */; };
-		9BB707061C7FB11D002BD5E5 /* ILGChildClass1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB707051C7FB11D002BD5E5 /* ILGChildClass1.m */; };
-		9BB707091C7FB12B002BD5E5 /* ILGChildClass2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB707081C7FB12B002BD5E5 /* ILGChildClass2.m */; };
-		9BB7070C1C7FB162002BD5E5 /* ILGChildClass3.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB7070B1C7FB162002BD5E5 /* ILGChildClass3.m */; };
-		9BB707101C7FB77F002BD5E5 /* ILGGrandchildClass1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB7070F1C7FB77F002BD5E5 /* ILGGrandchildClass1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,18 +74,26 @@
 		71D1C62B1B38CB0800BC6681 /* ILGSwizzler_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGSwizzler_Tests.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9327D1E0750D6CF899B3BC14 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9B0389F61C84DFF800C21541 /* ILGDynamicObjC_Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ILGDynamicObjC_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		9B038A011C84ED5100C21541 /* ILGChildClass1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGChildClass1.h; sourceTree = "<group>"; };
+		9B038A021C84ED5100C21541 /* ILGChildClass1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGChildClass1.m; sourceTree = "<group>"; };
+		9B038A031C84ED5100C21541 /* ILGChildClass2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGChildClass2.h; sourceTree = "<group>"; };
+		9B038A041C84ED5100C21541 /* ILGChildClass2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGChildClass2.m; sourceTree = "<group>"; };
+		9B038A051C84ED5100C21541 /* ILGChildClass3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGChildClass3.h; sourceTree = "<group>"; };
+		9B038A061C84ED5100C21541 /* ILGChildClass3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGChildClass3.m; sourceTree = "<group>"; };
+		9B038A071C84ED5100C21541 /* ILGGrandchildClass1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGGrandchildClass1.h; sourceTree = "<group>"; };
+		9B038A081C84ED5100C21541 /* ILGGrandchildClass1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGGrandchildClass1.m; sourceTree = "<group>"; };
+		9B038A091C84ED5100C21541 /* ILGParentClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGParentClass.h; sourceTree = "<group>"; };
+		9B038A0A1C84ED5100C21541 /* ILGParentClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGParentClass.m; sourceTree = "<group>"; };
+		9B038A0B1C84ED5100C21541 /* ILGParentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGParentProtocol.h; sourceTree = "<group>"; };
+		9B038A0E1C84ED5100C21541 /* SwiftChildClass1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftChildClass1.swift; sourceTree = "<group>"; };
+		9B038A0F1C84ED5100C21541 /* SwiftChildClass2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftChildClass2.swift; sourceTree = "<group>"; };
+		9B038A101C84ED5100C21541 /* SwiftChildClass3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftChildClass3.swift; sourceTree = "<group>"; };
+		9B038A111C84ED5100C21541 /* SwiftGrandchildClass1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGrandchildClass1.swift; sourceTree = "<group>"; };
+		9B038A121C84ED5100C21541 /* SwiftParentClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftParentClass.swift; sourceTree = "<group>"; };
+		9B038A131C84ED5100C21541 /* SwiftProtocolMarkedWithObjC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftProtocolMarkedWithObjC.swift; sourceTree = "<group>"; };
+		9B038A211C84EE8200C21541 /* ILGDynamicObjC_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ILGDynamicObjC_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		9BB706FF1C7FAFD9002BD5E5 /* ILGClasses_Tests_ObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGClasses_Tests_ObjC.m; sourceTree = "<group>"; };
-		9BB707011C7FB10E002BD5E5 /* ILGParentClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGParentClass.h; sourceTree = "<group>"; };
-		9BB707021C7FB10E002BD5E5 /* ILGParentClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGParentClass.m; sourceTree = "<group>"; };
-		9BB707041C7FB11D002BD5E5 /* ILGChildClass1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGChildClass1.h; sourceTree = "<group>"; };
-		9BB707051C7FB11D002BD5E5 /* ILGChildClass1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGChildClass1.m; sourceTree = "<group>"; };
-		9BB707071C7FB12B002BD5E5 /* ILGChildClass2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGChildClass2.h; sourceTree = "<group>"; };
-		9BB707081C7FB12B002BD5E5 /* ILGChildClass2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGChildClass2.m; sourceTree = "<group>"; };
-		9BB7070A1C7FB162002BD5E5 /* ILGChildClass3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGChildClass3.h; sourceTree = "<group>"; };
-		9BB7070B1C7FB162002BD5E5 /* ILGChildClass3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGChildClass3.m; sourceTree = "<group>"; };
-		9BB7070D1C7FB191002BD5E5 /* ILGParentProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILGParentProtocol.h; sourceTree = "<group>"; };
-		9BB7070E1C7FB77F002BD5E5 /* ILGGrandchildClass1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGGrandchildClass1.h; sourceTree = "<group>"; };
-		9BB7070F1C7FB77F002BD5E5 /* ILGGrandchildClass1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGGrandchildClass1.m; sourceTree = "<group>"; };
 		A79C743A92A69AEC41E90ACE /* Pods-ILGDynamicObjC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ILGDynamicObjC_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ILGDynamicObjC_Tests/Pods-ILGDynamicObjC_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ED59F784ABB629E90C4D90FE /* Pods-ILGDynamicObjC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ILGDynamicObjC_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ILGDynamicObjC_Example/Pods-ILGDynamicObjC_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F605838DD7F22B896C5AE486 /* ILGDynamicObjC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ILGDynamicObjC.podspec; path = ../ILGDynamicObjC.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -165,18 +179,9 @@
 				6003F5A5195388D20070C39A /* ILGViewController.h */,
 				6003F5A6195388D20070C39A /* ILGViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				9B038A001C84ED5100C21541 /* ObjCClasses */,
+				9B038A0C1C84ED5100C21541 /* SwiftClasses */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				9BB707011C7FB10E002BD5E5 /* ILGParentClass.h */,
-				9BB707021C7FB10E002BD5E5 /* ILGParentClass.m */,
-				9BB7070D1C7FB191002BD5E5 /* ILGParentProtocol.h */,
-				9BB707041C7FB11D002BD5E5 /* ILGChildClass1.h */,
-				9BB707051C7FB11D002BD5E5 /* ILGChildClass1.m */,
-				9BB707071C7FB12B002BD5E5 /* ILGChildClass2.h */,
-				9BB707081C7FB12B002BD5E5 /* ILGChildClass2.m */,
-				9BB7070A1C7FB162002BD5E5 /* ILGChildClass3.h */,
-				9BB7070B1C7FB162002BD5E5 /* ILGChildClass3.m */,
-				9BB7070E1C7FB77F002BD5E5 /* ILGGrandchildClass1.h */,
-				9BB7070F1C7FB77F002BD5E5 /* ILGGrandchildClass1.m */,
 			);
 			name = "Example for ILGDynamicObjC";
 			path = ILGDynamicObjC;
@@ -189,6 +194,7 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* ILGDynamicObjC-Prefix.pch */,
+				9B038A211C84EE8200C21541 /* ILGDynamicObjC_Example-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -221,6 +227,37 @@
 				31760DD47079278C81F46F9B /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		9B038A001C84ED5100C21541 /* ObjCClasses */ = {
+			isa = PBXGroup;
+			children = (
+				9B038A011C84ED5100C21541 /* ILGChildClass1.h */,
+				9B038A021C84ED5100C21541 /* ILGChildClass1.m */,
+				9B038A031C84ED5100C21541 /* ILGChildClass2.h */,
+				9B038A041C84ED5100C21541 /* ILGChildClass2.m */,
+				9B038A051C84ED5100C21541 /* ILGChildClass3.h */,
+				9B038A061C84ED5100C21541 /* ILGChildClass3.m */,
+				9B038A071C84ED5100C21541 /* ILGGrandchildClass1.h */,
+				9B038A081C84ED5100C21541 /* ILGGrandchildClass1.m */,
+				9B038A091C84ED5100C21541 /* ILGParentClass.h */,
+				9B038A0A1C84ED5100C21541 /* ILGParentClass.m */,
+				9B038A0B1C84ED5100C21541 /* ILGParentProtocol.h */,
+			);
+			path = ObjCClasses;
+			sourceTree = "<group>";
+		};
+		9B038A0C1C84ED5100C21541 /* SwiftClasses */ = {
+			isa = PBXGroup;
+			children = (
+				9B038A0E1C84ED5100C21541 /* SwiftChildClass1.swift */,
+				9B038A0F1C84ED5100C21541 /* SwiftChildClass2.swift */,
+				9B038A101C84ED5100C21541 /* SwiftChildClass3.swift */,
+				9B038A111C84ED5100C21541 /* SwiftGrandchildClass1.swift */,
+				9B038A121C84ED5100C21541 /* SwiftParentClass.swift */,
+				9B038A131C84ED5100C21541 /* SwiftProtocolMarkedWithObjC.swift */,
+			);
+			path = SwiftClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,14 +457,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BB7070C1C7FB162002BD5E5 /* ILGChildClass3.m in Sources */,
+				9B038A151C84ED5100C21541 /* ILGChildClass2.m in Sources */,
 				6003F59E195388D20070C39A /* ILGAppDelegate.m in Sources */,
+				9B038A1C1C84ED5100C21541 /* SwiftGrandchildClass1.swift in Sources */,
+				9B038A161C84ED5100C21541 /* ILGChildClass3.m in Sources */,
 				6003F5A7195388D20070C39A /* ILGViewController.m in Sources */,
-				9BB707101C7FB77F002BD5E5 /* ILGGrandchildClass1.m in Sources */,
-				9BB707061C7FB11D002BD5E5 /* ILGChildClass1.m in Sources */,
-				9BB707091C7FB12B002BD5E5 /* ILGChildClass2.m in Sources */,
+				9B038A191C84ED5100C21541 /* SwiftChildClass1.swift in Sources */,
+				9B038A141C84ED5100C21541 /* ILGChildClass1.m in Sources */,
+				9B038A1A1C84ED5100C21541 /* SwiftChildClass2.swift in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				9BB707031C7FB10E002BD5E5 /* ILGParentClass.m in Sources */,
+				9B038A171C84ED5100C21541 /* ILGGrandchildClass1.m in Sources */,
+				9B038A181C84ED5100C21541 /* ILGParentClass.m in Sources */,
+				9B038A1B1C84ED5100C21541 /* SwiftChildClass3.swift in Sources */,
+				9B038A1D1C84ED5100C21541 /* SwiftParentClass.swift in Sources */,
+				9B038A1E1C84ED5100C21541 /* SwiftProtocolMarkedWithObjC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,12 +592,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ILGDynamicObjC/ILGDynamicObjC-Prefix.pch";
 				INFOPLIST_FILE = "ILGDynamicObjC/ILGDynamicObjC-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ILGDynamicObjC/ILGDynamicObjC_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -565,12 +613,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ILGDynamicObjC/ILGDynamicObjC-Prefix.pch";
 				INFOPLIST_FILE = "ILGDynamicObjC/ILGDynamicObjC-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ILGDynamicObjC/ILGDynamicObjC_Example-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -580,6 +632,7 @@
 			baseConfigurationReference = 38BB4CA659459F439512F2B9 /* Pods-ILGDynamicObjC_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -592,8 +645,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/ILGDynamicObjC_Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ILGDynamicObjC_Example.app/ILGDynamicObjC_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -604,6 +660,7 @@
 			baseConfigurationReference = A79C743A92A69AEC41E90ACE /* Pods-ILGDynamicObjC_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
