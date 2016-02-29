@@ -23,6 +23,7 @@
 		717559BACB9F3E1722B6ECB7 /* libPods-ILGDynamicObjC_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 257B12B76CAF9DABA1E6B4D2 /* libPods-ILGDynamicObjC_Example.a */; };
 		71D1C62C1B38CB0800BC6681 /* ILGSwizzler_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D1C62B1B38CB0800BC6681 /* ILGSwizzler_Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9B0389F81C84DFF800C21541 /* ILGClasses_Tests_Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0389F71C84DFF800C21541 /* ILGClasses_Tests_Swift.swift */; };
 		9B038A141C84ED5100C21541 /* ILGChildClass1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B038A021C84ED5100C21541 /* ILGChildClass1.m */; };
 		9B038A151C84ED5100C21541 /* ILGChildClass2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B038A041C84ED5100C21541 /* ILGChildClass2.m */; };
 		9B038A161C84ED5100C21541 /* ILGChildClass3.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B038A061C84ED5100C21541 /* ILGChildClass3.m */; };
@@ -75,6 +76,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9327D1E0750D6CF899B3BC14 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9B0389F61C84DFF800C21541 /* ILGDynamicObjC_Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ILGDynamicObjC_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		9B0389F71C84DFF800C21541 /* ILGClasses_Tests_Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ILGClasses_Tests_Swift.swift; sourceTree = "<group>"; };
 		9B038A011C84ED5100C21541 /* ILGChildClass1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGChildClass1.h; sourceTree = "<group>"; };
 		9B038A021C84ED5100C21541 /* ILGChildClass1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILGChildClass1.m; sourceTree = "<group>"; };
 		9B038A031C84ED5100C21541 /* ILGChildClass2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILGChildClass2.h; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			children = (
 				71D1C62B1B38CB0800BC6681 /* ILGSwizzler_Tests.m */,
 				9BB706FF1C7FAFD9002BD5E5 /* ILGClasses_Tests_ObjC.m */,
+				9B0389F71C84DFF800C21541 /* ILGClasses_Tests_Swift.swift */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -215,6 +218,7 @@
 				6003F5B7195388D20070C39A /* Tests-Info.plist */,
 				6003F5B8195388D20070C39A /* InfoPlist.strings */,
 				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+				9B0389F61C84DFF800C21541 /* ILGDynamicObjC_Tests-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -480,6 +484,7 @@
 			files = (
 				71D1C62C1B38CB0800BC6681 /* ILGSwizzler_Tests.m in Sources */,
 				9BB707001C7FAFD9002BD5E5 /* ILGClasses_Tests_ObjC.m in Sources */,
+				9B0389F81C84DFF800C21541 /* ILGClasses_Tests_Swift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,8 +674,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/ILGDynamicObjC_Tests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ILGDynamicObjC_Example.app/ILGDynamicObjC_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
