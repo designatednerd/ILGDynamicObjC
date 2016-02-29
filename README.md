@@ -34,7 +34,7 @@ ILGClasses.classesConformingToProtocol(SwiftProtocolMarkedWithObjC.self)
 ```
 - Because you can only use `@objc` Swift protocols, this doesn't work super well with using protocol extensions. When implementing a method in the protocol in a class, you need to add the `@objc` annotation to that as well. However, when you try to do that with a protocol extension, you get an error:"`@objc` can only be used with members of classes, `@objc` protocols, and concrete extensions of classes". And if you don't add the `@objc` annotation, you'll get all kinds of vague Segmentation Fault 11 errors. 
 - Works fine with inheritance from a Swift class with no superclass
-- Does not work with strutcts.
+- Does not work with structs.
 
 
 ## Author
