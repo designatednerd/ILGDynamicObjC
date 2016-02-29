@@ -41,7 +41,7 @@
                                                    ]];
     
     NSSet *retrievedClasses = [ILGClasses classesPassingTest:^BOOL(Class class) {
-        if ([ILGClasses class:class orAnyOfItsSuperclassesPassesTest:^BOOL(Class  _Nonnull class) {
+        if ([ILGClasses class:class orAnyOfItsSuperclassesPassesTest:^BOOL(Class _Nonnull class) {
             return class == [NSObject class];
         }]) {
             //This is something that eventually inherits from NSObject.
