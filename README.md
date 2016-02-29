@@ -10,7 +10,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-A version of Xcode which supports nullability annotations. 
+A version of Xcode which supports nullability annotations and generics - ie, Xcode 7 or higher. 
 
 ## Installation
 
