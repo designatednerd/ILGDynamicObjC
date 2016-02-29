@@ -44,6 +44,6 @@ typedef BOOL(^ILGClassesClassTestBlock)(__strong Class class);
  */
 + (NSSet<Class> *__nullable)classesConformingToProtocol:(Protocol *)protocol;
 
-NS_ASSUME_NONNULL_END
-
 @end
+
+NS_ASSUME_NONNULL_END
