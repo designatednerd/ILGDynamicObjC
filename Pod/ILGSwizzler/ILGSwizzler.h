@@ -7,8 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 /**
  *  Class to facilitate replacing the implementation of class and/or instance methods with methods of the same name on 
  *  another class or with blocks, as well as facilitate undoing this swizzling.  Intended for use in unit testing.
@@ -23,9 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param targetClass         The class on which to replace it
  *  @param implementationClass The class from which to get the replacement implementation
  */
-- (void)replaceImplementationOfClassSelector:(SEL)selector
-                                     onClass:(Class)targetClass
-                 withImplementationFromClass:(Class)implementationClass;
+- (void)replaceImplementationOfClassSelector:(__nonnull SEL)selector
+                                     onClass:(__nonnull Class)targetClass
+                 withImplementationFromClass:(__nonnull Class)implementationClass;
 
 /**
  *  Replace the implementation of an instance method on one class with the corresponding method's implementation from
@@ -35,9 +33,9 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param targetClass         The class on which to replace it
  *  @param implementationClass The class from which to get the replacement implementation
  */
-- (void)replaceImplementationOfInstanceSelector:(SEL)selector
-                                        onClass:(Class)targetClass
-                    withImplementationFromClass:(Class)implementationClass;
+- (void)replaceImplementationOfInstanceSelector:(__nonnull SEL)selector
+                                        onClass:(__nonnull Class)targetClass
+                    withImplementationFromClass:(__nonnull Class)implementationClass;
 
 /**
  *  Replace the implementation of a class method on a given class with a block.
@@ -46,9 +44,9 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param targetClass         The class on which to replace it
  *  @param implementationBlock The block to use as the replacement implementation
  */
-- (void)replaceImplementationOfClassSelector:(SEL)selector
-                                     onClass:(Class)targetClass
-                                   withBlock:(id)implementationBlock;
+- (void)replaceImplementationOfClassSelector:(__nonnull SEL)selector
+                                     onClass:(__nonnull Class)targetClass
+                                   withBlock:(__nonnull id)implementationBlock;
 
 /**
  *  Replace the implementation of an instance method on a given class with a block.
@@ -57,9 +55,9 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param targetClass         The class on which to replace it
  *  @param implementationBlock The block to use as the replacement implementation
  */
-- (void)replaceImplementationOfInstanceSelector:(SEL)selector
-                                        onClass:(Class)targetClass
-                                      withBlock:(id)implementationBlock;
+- (void)replaceImplementationOfInstanceSelector:(__nonnull SEL)selector
+                                        onClass:(__nonnull Class)targetClass
+                                      withBlock:(__nonnull id)implementationBlock;
 
 /**
  *  Undo any method implementation replacement.
@@ -67,5 +65,3 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)done;
 
 @end
-
-NS_ASSUME_NONNULL_END
