@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+//Allow use with generics where supported. 
+#if __has_feature(objc_generics)
+    #define SetOfClasses NSSet<Class>
+#else
+    #define SetOfClasses NSSet
+#endif
+
 typedef BOOL(^ILGClassesClassTestBlock)(__strong __nonnull Class class);
 
 @interface ILGClasses : NSObject
@@ -19,7 +26,7 @@ typedef BOOL(^ILGClassesClassTestBlock)(__strong __nonnull Class class);
  *
  *  @return A set of all of the classes passing the test
  */
-+ (NSSet<Class> *__nullable)classesPassingTest:(__nonnull ILGClassesClassTestBlock)test;
++ (SetOfClasses *__nullable)classesPassingTest:(__nonnull ILGClassesClassTestBlock)test;
 
 /**
  *  Get a set of all of the classes that are a subclass of the given class.
@@ -31,7 +38,7 @@ typedef BOOL(^ILGClassesClassTestBlock)(__strong __nonnull Class class);
  *
  *  @return A set of all of the subclasses of the given class, including indirect subclasses.
  */
-+ (NSSet<Class> *__nullable)subclassesOfClass:(__nonnull Class)superclass;
++ (SetOfClasses *__nullable)subclassesOfClass:(__nonnull Class)superclass;
 
 /**
  *  Get a set of all of the classes that conform to the given protocol.
@@ -40,6 +47,6 @@ typedef BOOL(^ILGClassesClassTestBlock)(__strong __nonnull Class class);
  *
  *  @return A set of all of the classes that conform to the given protocol, as well as their direct and indirect subclasses.
  */
-+ (NSSet<Class> *__nullable)classesConformingToProtocol:(Protocol * __nonnull)protocol;
++ (SetOfClasses *__nullable)classesConformingToProtocol:(Protocol * __nonnull)protocol;
 
 @end
